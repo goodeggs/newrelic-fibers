@@ -1,0 +1,29 @@
+{
+  "name": "newrelic-fibers",
+  "version": "1.0.0",
+  "description": "Support for fibers in New Relic",
+  "author": "Good Eggs <open-source@goodeggs.com>",
+  "contributors": [
+    "Aaron Borden <adborden@live.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "newrelic fibers continuation-local-storage cls instrumentation"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goodeggs/newrelic-fibers.git"
+  },
+  "homepage": "https://github.com/goodeggs/newrelic-fibers",
+  "bugs": "https://github.com/goodeggs/newrelic-fibers/issues",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": ">=1.8.x",
+    "mocha": "~1.x.x",
+    "jshint": "*"
+  },
+  "scripts": {
+    "test": "jshint lib/*.js && mocha"
+  }
+}
