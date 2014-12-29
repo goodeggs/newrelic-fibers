@@ -17,11 +17,20 @@
   },
   "homepage": "https://github.com/goodeggs/newrelic-fibers",
   "bugs": "https://github.com/goodeggs/newrelic-fibers/issues",
-  "dependencies": {},
+  "peerDependencies": {
+    "newrelic": "*"
+  },
+  "dependencies": {
+    "fibers": "~1.0.2",
+    "cls-fibers": "~1.1.1"
+  },
   "devDependencies": {
     "coffee-script": ">=1.8.x",
     "mocha": "~1.x.x",
-    "jshint": "*"
+    "jshint": "*",
+    "sinon": "~1.12.2",
+    "chai": "~1.10.0",
+    "sinon-chai": "~2.6.0"
   },
   "scripts": {
     "test": "jshint lib/*.js && mocha"
