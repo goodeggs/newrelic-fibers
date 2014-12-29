@@ -1,6 +1,6 @@
 # newrelic-fibers
 
-Support for fibers in New Relic
+Support for fibers in New Relic using [cls-fibers](https://github.com/goodeggs/cls-fibers)
 
 [![NPM version](http://img.shields.io/npm/v/newrelic-fibers.svg?style=flat-square)](https://www.npmjs.org/package/newrelic-fibers)
 [![Build Status](http://img.shields.io/travis/goodeggs/newrelic-fibers.svg?style=flat-square)](https://travis-ci.org/goodeggs/newrelic-fibers)
@@ -12,8 +12,15 @@ Support for fibers in New Relic
 npm install newrelic-fibers
 ```
 
+`newrelic-fibers` exports a function that takes a callback.
+
 ```javascript
-var newrelicFibers = require('newrelic-fibers');
+// Instead of require('newrelic') ...
+require('newrelic-fibers')(function(err) {
+  if (err) {
+    console.error(err);
+  }
+});
 ```
 
 ## Contributing
